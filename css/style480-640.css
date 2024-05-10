@@ -1,0 +1,463 @@
+.wrapper {
+    width: 420px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.text16px {
+    font-size: 12px;
+}
+
+.text{
+    font-size: 12px;
+}
+
+.firstScreen {
+    height: 350px;
+}
+
+.specialOffer_link span {
+    font-size: 12px;
+}
+
+.specialOffer_foto {
+    width: 233px;
+    height: 140px;
+}
+
+p.specialOffer_text {
+    width: 170px;
+}
+
+.firstScreen_content__first {
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+.specialOffer_foto {
+    top: 80px;
+}
+a.specialOffer_link{
+    margin-bottom: 150px;
+}
+
+
+a.calculatePrice {
+    padding: 16px 17px;
+    margin-left: 190px;
+    margin-bottom: 20px;
+
+}
+p.warranty_title{
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 420px;
+}
+
+.warranty_foto {
+    width: 660px;
+    height: 93px;
+}
+
+.warranty_foto img {
+ left: -145px;
+}
+.maxima_text{
+    font-size: 12px;
+}
+
+button.orderMeasurement {
+padding: 18px 26px;
+}
+
+.maxima_foto {
+    width: 209px;
+    height: 229px;
+}
+
+.maxima_foto img{
+    left: -20px;
+}
+
+.maxima{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+p.maxima_title{
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+p.maxima_text{
+    margin-bottom: 20px;
+    width: 213px;
+}
+
+.maxima_content {
+    margin-left: 0px;
+}
+
+.number span{
+    font-size: 20px;
+}
+
+.number p.text{
+    margin-bottom: 10px;
+}
+
+.number {
+    width: 165px;
+    margin-bottom: 10px;
+}
+
+.numbers_content .number:last-child{
+    width: 200px;
+}
+
+.numbers{
+    margin-top: 50px;    
+}
+
+.calculateCost_content {
+    width: 280px;
+}
+.calculateCost_parameters{
+    justify-content: center;
+}
+
+p.parameters_title{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.calculateCost_title{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.calculateCost_parameters select{
+    font-size: 12px;
+}
+.calculateCost_send{
+    display: none;
+}
+.mobile_none{
+    display: none;
+}
+.array_mobile{
+    display: flex;
+    justify-content: flex-end;
+}
+.calculateCost_parameters{
+    margin-bottom: 0px;
+}
+
+.calculateCost {
+    margin-bottom: 90px;
+}
+h2.title{
+    font-size: 16px;
+}
+
+.advantages_tablet__foto {
+    width: 399px;
+    height: 437px;
+    margin: 0 auto;
+}
+.advantages_tablet__foto{
+    margin-bottom: 30px;
+}
+
+.advantages_text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 45px;
+    grid-auto-columns: 30px;
+}
+.advantages_title{
+    margin-bottom: 30px;
+}
+
+.line{
+    display: none;
+}
+.advantages {
+    margin-bottom: 90px;
+}
+
+.salon_title__foto,
+.salon_content__foto {
+    width: 246px;
+    height: 181px;
+    margin: 0 auto;
+}
+.salon_content__foto {
+    margin-bottom: 30px;
+}
+
+.salon_title h2{
+    margin-bottom: 30px;
+}
+.salon_text p{
+    width: 388px;
+    margin-right: 0px;
+}
+
+
+.salon_text{
+    width: 420px;
+}
+
+.salon {
+    margin-bottom: 40px;
+}
+
+p.port_name{
+    font-size: 12px;
+}
+p.port_address{
+    font-size: 10px;
+}
+
+.port_element__active p.port_name{
+    font-size: 12px;
+}
+
+.port_element__active p.port_address{
+    font-size: 10px;
+}
+
+.port_element {
+    width: 139px;
+}
+
+.portfolio_name {
+    width: 420px;
+}
+
+#portfolioName {
+    width: 380px;
+}
+
+
+.port_element__active:hover p.port_name{
+    font-size: 12px;
+}
+.port_element__active:hover p.port_address{
+    font-size: 10px;
+}
+.port_element{
+    padding-left: 5px;
+}
+.port_element__active{
+    padding-left: 20px;
+}
+.port_element:hover {
+  padding-left: 5px;
+}
+.port_element__active:hover{
+    padding-left: 20px;
+}
+
+.portfolio_mainFoto{
+    width: 420px;
+    position: relative;
+    left: 40px;
+}
+
+.portfolio_foto{
+    width: 420px;
+}
+
+#portfolioMainFoto {
+    height: 218px;
+    width: 330px;
+}
+
+.portfolio{
+    margin-bottom: 40px;
+}
+
+.portfolio_title__tablet{
+    margin-bottom: 30px;
+}
+
+.catalog_mobile{
+    display: block;
+}
+.catalog_title{
+    margin-bottom: 30px;
+}
+
+.catalog_mobile__foto{
+    width: 420px;
+    height: 322px;
+      margin-bottom: 20px;
+}
+
+.catalog_mobile__foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+
+.catalog_mobile__title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.catalog_mobile__text{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.78px;
+    margin-bottom: 20px;
+}
+
+.catalog_mobile__element{
+    margin-bottom: 30px;
+}
+
+.catalog_mobile__element .specialOffer_link{
+    margin-bottom: 0px;
+}
+.catalog{
+    margin-bottom: 40px;
+}
+
+p.stocks_name__text{
+    font-size: 14px;
+    width: 271px;
+}
+
+.stocks_title{
+    margin-bottom: 30px;
+}
+.stocks_text{
+    margin-bottom: 30px;
+}
+
+#stocksData .position_active{
+    border-left: 1.5px solid #424242;
+    border-bottom: 0px;
+}
+
+
+.stocks_foto {
+    height: 77px;
+    width: 100px;
+    position: relative;
+}
+
+.stock {
+    width: 420px;
+}
+
+.reviews_title{
+    margin-bottom: 0px;
+}
+#reviewsRight{
+    display: none;
+}
+
+#reviewsLeft{
+    display: none;
+}
+
+.reviews_description{
+    font-size: 12px;
+}
+
+.mobile_block{
+    display: block;
+}
+.review_foto{
+    width: 183px;
+    height: 194px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.review_foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviews_author{
+    display: flex;
+    align-items: center;
+}
+
+.reviews_author div{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 275px;
+}
+.contact_content__dark{
+    width: 335px;
+    margin: 0 auto;
+}
+.orderMeasurement_title{
+    font-size: 12px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.contact_content__dark input[type="text"]{
+    font-size: 12px;
+    width: 160px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+.contact_content__dark input[type="button"]{
+    font-size: 12px;
+    padding: 20px 25px;
+    margin-bottom: 0px;
+}
+
+.contact_content__dark label,
+.contact_content__dark a{
+    font-size: 12px;
+}
+
+.contacts_dark,
+.contacts_light{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contacts_title{
+    margin-bottom: 30px;
+}
+p.contacts_position{
+    font-size: 14px;
+}
+
+a.autor_link{
+     font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    color: #909090;  
+    text-decoration: none;
+    margin-left: 250px;
+}
+
+.contacts_info div{
+    display: flex;
+    
+}
+
+.contacts_info div img{
+    margin-right: 15px;
+}
+
+.contacts_light div{
+     width: 335px;
+}

@@ -1,0 +1,281 @@
+
+.wrapper {
+    width: 940px;
+}
+
+.menu_link {
+    display: none;
+}
+
+.menu_button {
+    display: none;
+}
+
+.menu_burger {
+    display: block;
+}
+
+.firstScreen_content__first {
+    margin-top: 90px;
+}
+
+.firstScreen {
+    height: 600px;
+}
+
+a.calculatePrice {
+    margin: 0px 0px 40px 709px;
+}
+
+p.warranty_title {
+    font-size: 34px;
+}
+
+.firstScreen_content__second img {
+    width: 1300px;
+    position: relative;
+    left: -130px;
+    top: 0;
+}
+
+p.warranty_title {
+    margin: 0px 110px 40px 0px;
+}
+
+.maxima_foto {
+    width: 690px;
+    height: 728px;
+}
+
+.maxima_foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: -130px;
+}
+
+.maxima_content {
+    margin-left: -70px;
+}
+
+p.maxima_text {
+    margin-bottom: 40px;
+    width: 286px;
+
+}
+
+.link {
+    margin-bottom: 50px;
+}
+
+
+.numbers {
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+.numbers_content {
+    grid-column-gap: 90px;
+}
+
+.calculateCost_content {
+    width: 790px;
+}
+
+.calculateCost_title{
+    font-size: 34px;
+}
+
+.calculateCost_parameters select {
+    width: 200px;
+    padding: 11px 9px;
+}
+
+#infoKitchen {
+    width: 463px;
+}
+
+.info_kitchen {
+    width: 487px;
+}
+
+.phone_title {
+    width: 370px;
+}
+
+.calculateCost {
+    margin-bottom: 120px;
+}
+
+.line {
+    display: none;
+}
+
+.advantages_text {
+    width: 375px;
+}
+
+.advantages_foto {
+    width: 366px;
+    height: 498px;
+}
+
+.advantages_foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.advantages_text p {
+    margin-bottom: 20px;
+}
+
+.advantages_content {
+    align-items: center;
+}
+
+.advantages {
+    margin-bottom: 120px;
+}
+
+.salon_title__foto {
+    width: 417px;
+    height: 279px;
+    margin-right: 64px;
+}
+
+.salon_title__foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.salon_title h2 {
+    font-size: 34px;
+    width: 450px;
+}
+
+.salon_content__foto {
+    width: 586px;
+    height: 206px;
+    margin-left: 44px;
+}
+
+.salon_content__foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 0px;
+}
+
+
+
+.salon_text {
+    width: 294px;
+}
+
+.salon {
+    margin-bottom: 120px;
+}
+
+.portfolio_foto__active {
+    display: none;
+}
+
+#portfolioMainFoto {
+    height: 377px;
+    width: 570px;
+}
+
+.portfolio_title {
+    font-size: 34px;
+}
+
+.portfolio {
+    margin-bottom: 70px;
+}
+
+.catalog_title {
+    font-size: 36px;
+    width: 900px;
+}
+
+.catalog_content {
+    display: block;
+}
+
+.catalog_categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p.catalog_text {
+    margin-right: 70px;
+}
+
+#catalogProduct{
+    width: 940px;
+}
+
+.position_active {
+    border-bottom: 1.5px solid #424242;
+    border-left: 0px;
+}
+
+.stocks_title {
+    font-size: 34px;
+}
+
+.stocks_foto {
+    height: 129px;
+    width: 182px;
+}
+
+.stock {
+    width: 658px;
+    padding: 10px 0px;
+}
+
+#stocksData .position_active {
+    border-left: 1.5px solid #424242;
+    border-bottom: 0px;
+}
+
+.stocks {
+    margin-bottom: 70px;
+}
+
+.reviews_title {
+    font-size: 34px;
+}
+
+.reviews_left {
+    width: 481px;
+}
+
+.reviews {
+    margin-bottom: 70px;
+}
+
+.contacts {
+    display: block;
+}
+
+.contacts_dark {
+    padding: 80px 0px 32px 0px;
+    justify-content: center;
+}
+
+
+.contacts_light {
+    padding: 80px 0px 32px 0px;
+    display: flex;
+    justify-content: center;
+}
+.contacts_social a{
+    margin-top: 50px;
+    position: relative;
+    left: 230px;
+    padding-bottom: 30px;
+}
