@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1220px)" href="css/style1024-1200.css">
+    <link rel="stylesheet" media="screen and (max-width:1024px)" href="css/style640-1024.css">
+    <link rel="stylesheet" media="screen and (max-width:640px)" href="css/style480-640.css">
+    <link rel="stylesheet" media="screen and (max-width:480px)" href="css/style320-480px.css">
+
+</head>
+
+<body>
+
+    <a href="#firstScreen">
+        <div id="arrayTop"><img src="img/but/Array.svg" alt=""></div>
+    </a>
+    <span class="hint text16px" id="hint"><span id="phoneHint" style="display: none">Заказать звонок</span><span id="chatbotHint">Виртуальный помощник</span>
+    </span>
+    <div class="chatbot cursor" id="buttonChatbot"><img src="img/but/chatbot.svg" id="chatbot" alt=""><img src="img/but/phone.svg" style="display: none" alt="" id="phone"><span class="flare"></span></div>
+
+
+    <!--    Foto Window Portfolio-->
+    <div class="window_foto" id="windowOpen" style="display: none">
+        <img class="cursor" src="img/FotoWindow/Left.svg" alt="" id="windowFotoLeft">
+        <div class="foto_close">
+            <div class="foto" id="windowFoto">
+            </div>
+            <img class="cursor" src="img/FotoWindow/Close.svg" alt="" id="fotoWindowClose">
+        </div>
+        <img class="cursor" src="img/FotoWindow/Right.svg" alt="" id="windowFotoRight">
+
+    </div>
+    <!--   Menu-->
+    <nav class="menu">
+        <div class="wrapper menu_content">
+            <div class="menu_logo">
+                <a href="index.html"><img src="img/menu/logo.svg" alt=""></a>
+                <img class="cursor" src="img/menu/phone.svg" alt="">
+                <img class="cursor" src="img/menu/search.svg" alt="" id="searchImg">
+                <form action="#" method="get" class="menu_search" id="search" style="display: none;">
+                    <input type="text" placeholder="Поиск" class="search text_button">
+                    <button class="button_search cursor"><img src="img/menu/buttonSearch.svg" alt=""></button>
+                </form>
+            </div>
+            <div class="menu_link">
+                <a href="#catalog">Каталог</a>
+                <a href="#portfolio">Портфолио</a>
+                <a href="#stocks">Акции</a>
+                <img class="cursor" src="img/menu/unwrap.svg" alt="" id="menuUnwrap">
+                <div class="menu_expanded" id="menuExpanded" style="display: none">
+                    <a href="index.html">Главная</a>
+                    <a href="#reviews">Отзывы</a>
+                    <a href="#contacts">Контакты</a>
+                    <img class="cursor" src="img/menu/rollUp.svg" id="menuRollUp" alt="">
+                </div>
+            </div>
+            <div class="menu_button">
+                <a class="text_button" href="#calculateCost">Расчитать цену</a>
+                <button class="text_button cursor" id="orderMeasurementMenu">Заказать замер</button>
+            </div>
+            <div class="menu_burger cursor"><img src="img/style1024/burger.svg" alt=""></div>
+        </div>
+    </nav>
+
+    <!--    заказать замер -->
+    <div class="orderMeasurement_window" id="orderMeasurementWindow" style="display: none;">
+        <img class="cursor" src="img/OrderMeasurement/Close.svg" id="orderMeasurementClose" alt="">
+        <p class="orderMeasurement_title text16px">заказать замер</p>
+        <form action="#" method="post">
+            <input type="text" name="nameOrderMeasurement" placeholder="Имя"><br>
+            <input type="text" name="phoneOrderMeasurement" placeholder="Телефон"><br>
+            <div class="orderMeasurement_personalData personalData cursor"><input type="checkbox" id="orderMeasurementPersonalData" name="orderMeasurementPersonalData" checked required><span><img src="img/OrderMeasurement/checked.svg" alt=""></span><label for="orderMeasurementPersonalData">Даю согласие на обработку <a href="#">Персональных данных</a></label></div>
+            <input class="cursor" type="button" value="Отправить">
+        </form>
+    </div>
+    
+    
+    <!--    заказать звонок -->
+    <div class="orderMeasurement_window" id="orderCallWindow" style="display: none">
+        <img class="cursor" src="img/OrderMeasurement/Close.svg" id="orderCallClose" alt="">
+        <p class="orderMeasurement_title text16px">заказать звонок</p>
+        <form action="#" method="post">
+            <input type="text" name="nameCallMeasurement" placeholder="Имя"><br>
+            <input type="text" name="phoneCallMeasurement" placeholder="Телефон"><br>
+            <div class="orderMeasurement_personalData personalData cursor"><input type="checkbox" id="orderCallPersonalData" name="orderMeasurementPersonalData" checked required><span><img src="img/OrderMeasurement/checked.svg" alt=""></span><label for="orderCallPersonalData">Даю согласие на обработку <a href="#">Персональных данных</a></label></div>
+            <input class="cursor" type="button" value="Отправить">
+        </form>
+    </div>
+
+
+    <!--   главный экран-->
+    <div class="link"><a name="firstScreen"></a></div>
+    <div class="firstScreen">
+        <div class="wrapper">
+            <div class="breadCrumbs" id="breadCrumbsFirstScreen">
+                <div class="crumb crumb_active"></div>
+                <div class="crumb"></div>
+                <div class="crumb"></div>
+            </div>
+            <div class="firstScreen_content__first" id="firstScreenFirst">
+                <div class="specialOffer_content">
+                    <p class="specialOffer_text firstScreen_text text16px">при покупке кухни и техники мойка + смеситель в подарок!</p>
+                    <a href="#catalog" class="specialOffer_link specialOffer_link__catalog"><img src="img/firstScreen/line.svg" class="specialOffer_line" alt=""><span>Перейти в каталог</span><img src="img/firstScreen/array.svg" class="specialOffer_array" alt=""></a>
+                    <p class="durationPromotion text16px">Акция действует по 31 декабря 2022 года</p>
+                </div>
+                <div class="specialOffer">
+                    <p class="title specialOffer_title">Специальное<br> предложение</p>
+                    <div class="specialOffer_foto"><img src="img/firstScreen/foto1.png" alt=""></div>
+                    
+                </div>
+            </div>
+
+            <div class="firstScreen_content__second" id="firstScreenSecond" style="display: none">
+                <div class="warranty">
+                    <p class="warranty_title title">Гарантия до 5 лет на вашу новую кухню</p>
+                    <a href="#calculateCost" class="calculatePrice text_button">Расчитать цену</a>
+                </div>
+                <div class="warranty_foto"><img src="img/firstScreen/foto2.png" alt=""></div>
+            </div>
+
+
+            <div class="firstScreen_content__third" id="firstScreenThird" style="display: none">
+                <div class="maxima">
+                    <div class="maxima_foto"><img src="img/firstScreen/foto3.png" alt=""></div>
+                    <div class="maxima_content">
+                        <p class="maxima_title title">Maxima</p>
+                        <p class="maxima_text firstScreen_text">умные решения для оптимальной организации пространства на вашей кухне</p>
+                        <button class="orderMeasurement text16px cursor" id="orderMeasurementFirstScreen">Заказать замер</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="numbers">
+        <div class="wrapper numbers_content">
+            <div class="number">
+                <p class="text"><span>1997</span>год</p>
+                <p class="text">основания предприятия в Республике Беларусь</p>
+            </div>
+
+            <div class="number">
+                <p class="text"><span>25</span>лет</p>
+                <p class="text">компания является ведущей на рынке</p>
+            </div>
+
+            <div class="number">
+               
+                <p class="text"><span>2000</span></p>
+                <p class="text">профессионалов вовлечены в производственный процесс</p>
+            </div>
+        </div>
+    </div>
+    <div class="link"><a name="calculateCost"></a></div>
+    <div class="calculateCost">
+        <div class="calculateCost_content">
+            <h2 class="calculateCost_title title">Рассчитать стоимость<br>будущего проекта</h2>
+            <form action="#">
+                <div class="calculateCost_parameters">
+                    <div class="kitchenStyle">
+                        <p class="parameters_title firstScreen_text">Стиль кухни</p>
+                        <select class="text_input" name="kitchenStyle" id="kitchenStyle">
+                            <option value="classic">Классика</option>
+                            <option value="modern">Современный</option>
+                        </select>
+                    </div>
+                    <div class="kitchenLocation">
+                        <p class="parameters_title firstScreen_text">Расположение кухни</p>
+                        <select class="text_input" name="kitchenLocation" id="kitchenLocation">
+                            <option value="corner">Угловая</option>
+                            <option value="linear">Линейная</option>
+                            <option value="u-shaped">П-образная</option>
+                        </select>
+                    </div>
+                    <div class="kitchenLocation">
+                        <p class="parameters_title firstScreen_text">Примерный бюджет</p>
+                        <select class="text_input" name="kitchenBudget" id="kitchenBudget">
+                            <option value="budget1">до 120 тысяч рублей</option>
+                            <option value="budget2">120 - 200 тысяч рублей</option>
+                            <option value="budget3">200 - 400 тысяч рублей</option>
+                            <option value="budget4">от 400 тысяч рублей</option>
+                        </select>
+                    </div>
+                </div>
+                <p class="parameters_title firstScreen_text mobile_none">дополнительная информация о вашей идее</p>
+                <div class="info_kitchen mobile_none"  id="infoKitchenBorder"><textarea class="text_input" name="infoKitchen" id="infoKitchen" placeholder="Введите текст"></textarea></div>
+                <div class="calculateCost_send">
+                    <div class="calculateCost_phone">
+                        <p class="parameters_title firstScreen_text phone_title">оставьтe номер телефона и мы предоставим расчет<br>стоимости вашего проекта</p>
+                        <input type="phone" placeholder="+7 900 000 00 00">
+                        <div class="calculateCost_personalData personalData cursor"><input type="checkbox" id="calculateCostPersonalData" name="calculateCostPersonalData" checked required><span><img src="img/CalculCost/checket.svg" alt=""></span><label for="calculateCostPersonalData">Даю согласие на обработку <a href="#">Персональных данных</a></label></div>
+                    </div>
+
+                    <div class="calculateCost_button">
+                        <input type="button" class="text16px cursor" value="Расчитать стоимость">
+                    </div>
+                </div>
+                <div class="array_mobile"><img src="img/style480/buttonArray.svg" alt=""></div>
+            </form>
+        </div>
+    </div>
+
+    <!--Advantages-->
+    <div class="advantages">
+        <div class="wrapper advantages_content">
+            <h2 class="title advantages_title">Наши преимущества</h2>
+            <div class="advantages_tablet__foto"><img src="img/style640.css/foto.png" alt=""></div>
+            <div class="advantages_text">
+                <div class="line"></div>
+                <div>
+                <img src="img/Advantages/icons1.svg" alt="">
+                <p class="text">Мы заботимся о вашем здоровье и используем экологически чистые материалы</p>
+                </div>
+                <div>
+                <img src="img/Advantages/icons2.svg" alt="">
+                <p class="text">Мы уверены в качестве и даем расширенную гарантию до 5 лет по договору</p>
+                </div>
+                <div>
+                <img src="img/Advantages/icons3.svg" alt="">
+                <p class="text">Мы изготавливаем мебель на высокоточном дорогостоящем оборудовании</p>
+                </div>
+                <div>
+                <img src="img/Advantages/icons4.svg" alt="">
+                <p class="text">Мы используем качественные европейские комплектующие </p>
+                </div>
+
+            </div>
+
+            <div class="advantages_foto">
+                <img src="img/Advantages/foto.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <!--Salon-->
+    <div class="salon">
+        <div class="wrapper">
+            <div class="salon_title">
+                <div class="salon_title__foto"><img src="img/Salon/foto1.png" alt=""></div>
+                <h2 class="title">салон фабрики «Зов» в городе курск</h2>
+            </div>
+            <div class="salon_content">
+                <div class="salon_text">
+                    <p class="text">Наш просторный салон располагается в самом центре города Курск и его сотрудники всегда рады своим новым и постоянным клиентам.</p>
+                    <a href="#" class="text16px">Посетить салон виртуально</a>
+                </div>
+                <div class="salon_content__foto"><img src="img/Salon/foto2.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Portfolio-->
+    <div class="link"><a name="portfolio"></a></div>
+    <div class="portfolio">
+        <div class="wrapper portfolio_content">
+            <div class="portfolio_name">
+                <h2 class="portfolio_title portfolio_title__computer title" id="portfolioTitle">Порфолио</h2>
+                <h2 class="portfolio_title portfolio_title__tablet title" id="portfolioTitleTablet">Порфолио</h2>
+
+                <img class="cursor" src="img/portfolio/arrayTop.svg" id="portTop" alt="" style="display: none">
+
+                <div id="portfolioName">
+
+                </div>
+
+                <img class="cursor" src="img/portfolio/arrayBottom.svg" id="portBottom" alt="">
+            </div>
+            <div class="portfolio_foto">
+                <div class="portfolio_mainFoto">
+                    <img class="cursor" src="img/portfolio/arrayLeft.svg" id="portfolioMainFotoLeft" alt="">
+                    <div id="portfolioMainFoto"></div>
+                    <img class="cursor" src="img/portfolio/arrayRight.svg" id="portfolioMainForoRight" alt="">
+                </div>
+                <div id="portfolioBreadCrumbs"></div>
+                <div class="portfolio_foto__active">
+                    <img class="cursor" src="img/portfolio/arrayLeft.svg" id="portfolioFotoLeft" alt="" style="display: none;">
+                    <div id="portfolioFoto"></div>
+                    <img class="cursor" src="img/portfolio/arrayRight.svg" id="portfolioForoRight" alt="" style="display: none;">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Catalog-->
+    <div class="link"><a name="catalog"></a></div>
+    <div class="catalog ">
+        <div class="wrapper">
+            <div class="catalog_content mobile_none">
+                <div class="catalog_categories">
+                    <h2 class="catalog_title title">Каталог</h2>
+                    <p class="catalog_text text cursor" id="kitchens">Кухни</p><br>
+                    <p class="catalog_text text cursor" id="cabinetFurniture">Корпусная мебель</p><br>
+                    <p class="catalog_text text cursor" id="dressingWardrobes">Гардеробные шкафы и системы</p><br>
+                </div>
+                <div id="catalogProduct"></div>
+            </div>
+
+
+            <div class="goToCatalog mobile_none"><a href="catalog.html">
+                    <div class="buttonCatalog cursor">
+                        <img src="img/CatalogPage/Button.svg" class="buttonArrayPeace" alt="">
+                        <img src="img/CatalogPage/ButtonHover.svg" class="buttonArrayHover" alt="">
+                        <img src="img/CatalogPage/ButtonActive.svg" class="buttonArrayActive" alt="">
+                    </div>
+                </a></div>
+        </div>
+        <div class="wrapper catalog_mobile">
+            <h2 class="catalog_title title">Каталог</h2>
+            <div class="catalog_mobile__element">
+                <div class="catalog_mobile__foto"><img src="img/style480/catalog1.png" alt=""></div>
+                <p class="catalog_mobile__title">Кухни</p>
+                <p class="catalog_mobile__text">Мы создаем свои кухни из премиальных материалов, уделяя внимание деталям. Все это подарит вам чувство надежности и уюта на долгие годы.</p>
+                 <a href="catalog.html" class="specialOffer_link specialOffer_link__catalog"><img src="img/firstScreen/line.svg" class="specialOffer_line" alt=""><span>Перейти в каталог</span><img src="img/firstScreen/array.svg" class="specialOffer_array" alt=""></a>
+            </div>
+            <div class="catalog_mobile__element">
+                <div class="catalog_mobile__foto"><img src="img/style480/catalog2.png" alt=""></div>
+                <p class="catalog_mobile__title">корпусная мебель</p>
+                <p class="catalog_mobile__text">Наш широкий выбор корпусной мебели позволит воплотить ваши мечты об идеальном дизайнерском решении в интерьере.</p>
+                 <a href="catalog.html" class="specialOffer_link specialOffer_link__catalog"><img src="img/firstScreen/line.svg" class="specialOffer_line" alt=""><span>Перейти в каталог</span><img src="img/firstScreen/array.svg" class="specialOffer_array" alt=""></a>
+            </div>
+            <div class="catalog_mobile__element">
+                <div class="catalog_mobile__foto"><img src="img/style480/catalog3.png" alt=""></div>
+                <p class="catalog_mobile__title">гардеробные шкафы и системы</p>
+                <p class="catalog_mobile__text">Современный дизайн сложно представить без удобной системы для хранения. Поддержать гармонию в вашем интерьере помогут наши эргономичные гардеробные шкафы и системы.</p>
+                 <a href="catalog.html" class="specialOffer_link specialOffer_link__catalog"><img src="img/firstScreen/line.svg" class="specialOffer_line" alt=""><span>Перейти в каталог</span><img src="img/firstScreen/array.svg" class="specialOffer_array" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!--Stocks-->
+    <div class="link"><a name="stocks"></a></div>
+    <div class="stocks">
+        <div class="wrapper">
+            <h2 class="title stocks_title">Акции</h2>
+            <div class="stocks_content">
+                <div id="stocksData"></div>
+                <div id="stocksName"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--   Reviews-->
+    <div class="link"><a name="reviews"></a></div>
+    <div class="reviews">
+        <div class="wrapper">
+            <h2 class="title reviews_title">Отзывы</h2>
+            <div class="reviews_content">
+                <div class="reviews_left">
+                    <div class="reviews_text">
+                        <img class="cursor" src="img/portfolio/arrayLeft.svg" id="reviewsLeft" alt="">
+                        <div class="review" id="review">
+                        </div>
+                        <img class="cursor" src="img/portfolio/arrayRight.svg" id="reviewsRight" alt="">
+                    </div>
+                    
+                </div>
+                <div class="reviews_foto mobile_none" id="reviewFoto">
+                </div>
+            </div>
+            <button class="orderMeasurement orderMeasurement_reviews cursor" id="reviewsOrderCall">Заказать звонок</button>
+        </div>
+    </div>
+
+    <!--    Contacts-->
+    <div class="link"><a name="contacts"></a></div>
+    <div class="contacts">
+        <div class="contacts_dark">
+            <div class="contact_content__dark">
+                <p class="orderMeasurement_title">оставить заявку на бесплатную консультацию дизайнера</p>
+                <form action="#" method="post">
+                    <input type="text" name="nameContact" placeholder="Имя"><br>
+                    <input type="text" name="phoneContact" placeholder="Телефон"><br>
+                    <div class="orderMeasurement_personalData personalData cursor"><input type="checkbox" id="contactPersonalData" name="contactPersonalData" checked required><span><img src="img/OrderMeasurement/checked.svg" alt=""></span><label for="contactPersonalData">Даю согласие на обработку <a href="#">Персональных данных</a></label></div>
+                    <input class="cursor" type="button" value="Отправить">
+                </form>
+                <a href="#stocks">Акции</a>
+                <a href="#catalog">Каталог</a>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+        <div class="contacts_light">
+           <div>
+            <h2 class="contacts_title">Контакты</h2>
+            <div class="contacts_text">
+                <div class="contacts_info">
+                    <p class="contacts_position">Адрес</p>
+                    <div><img src="img/style480/address.svg" class="mobile_block" alt=""><p class="contacts_position__info text16px">ул. Ленина, 11, Курск</p></div>
+                    <div><img src="img/style480/email.svg" class="mobile_block" alt=""><p class="contacts_position__info text16px">84578@586769776.ru</p></div>
+                    <div><img src="img/style480/phone.svg" class="mobile_block" alt=""><p class="contacts_position__info text16px">+ 7 920 555 5555</p></div>
+                    <a class="mobile_block autor_link" href="#">Made by DS</a>
+                </div>
+                <div class="contacts_social mobile_none">
+                    <p class="contacts_position">Соцсети</p>
+                    <p class="contacts_position__info text16px cursor">Telegram</p>
+                    <p class="contacts_position__info text16px cursor">Вконтакте</p>
+                    <p class="contacts_position__info pinterest text16px cursor">Pinterest</p>
+                    <a href="#">Made by DS</a>
+                </div>
+                
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/function.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/orderMeasurementWindow.js"></script>
+    <script src="js/orderCallWindow.js"></script>
+    <script src="js/calculateCost.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/stocks.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="js/firstScreen.js"></script>
+</body></html>

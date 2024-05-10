@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div style="position: absolute; top: 0px;"><a name="top"></a></div>
+
+    <a href="#top">
+        <div id="arrayTop"><img src="img/but/Array.svg" alt=""></div>
+    </a>
+    <span class="hint text16px" id="hint"><span id="phoneHint" style="display: none">Заказать звонок</span><span id="chatbotHint">Виртуальный помощник</span>
+    </span>
+    <div class="chatbot cursor" id="buttonChatbot"><img src="img/but/chatbot.svg" id="chatbot" alt=""><img src="img/but/phone.svg" style="display: none" alt="" id="phone"><span class="flare"></span></div>
+
+
+    <!--   Menu-->
+    <div class="menu">
+        <div class="wrapper menu_content">
+            <div class="menu_logo">
+                <a href="index.html"><img src="img/menu/logo.svg" alt=""></a>
+                <img class="cursor" src="img/menu/phone.svg" alt="">
+                <img class="cursor" src="img/menu/search.svg" alt="" id="searchImg">
+                <form action="#" method="get" class="menu_search" id="search" style="display: none;">
+                    <input type="text" placeholder="Поиск" class="search text_button">
+                    <button class="button_search cursor"><img src="img/menu/buttonSearch.svg" alt=""></button>
+                </form>
+            </div>
+            <div class="menu_link">
+                <a href="#catalog">Каталог</a>
+                <a href="#portfolio">Портфолио</a>
+                <a href="#stocks">Акции</a>
+                <img class="cursor" src="img/menu/unwrap.svg" alt="" id="menuUnwrap">
+                <div class="menu_expanded" id="menuExpanded" style="display: none">
+                    <a href="index.html">Главная</a>
+                    <a href="#reviews">Отзывы</a>
+                    <a href="#contacts">Контакты</a>
+                    <img class="cursor" src="img/menu/rollUp.svg" id="menuRollUp" alt="">
+                </div>
+            </div>
+            <div class="menu_button">
+                <a class="text_button" href="#calculateCost">Расчитать цену</a>
+                <button class="text_button cursor" id="orderMeasurementMenu">Заказать замер</button>
+            </div>
+        </div>
+    </div>
+
+    <!--    заказать замер -->
+    <div class="orderMeasurement_window" id="orderMeasurementWindow" style="display: none;">
+        <img class="cursor" src="img/OrderMeasurement/Close.svg" id="orderMeasurementClose" alt="">
+        <p class="orderMeasurement_title text16px">заказать замер</p>
+        <form action="#" method="post">
+            <input type="text" name="nameOrderMeasurement" placeholder="Имя"><br>
+            <input type="text" name="phoneOrderMeasurement" placeholder="Телефон"><br>
+            <div class="orderMeasurement_personalData personalData"><input type="checkbox" id="orderMeasurementPersonalData" name="orderMeasurementPersonalData" checked><span>Даю согласие на обработку <a href="#">Персональных данных</a></span></div>
+            <input class="cursor" type="button" value="Отправить">
+        </form>
+    </div>
+    
+    <!--    заказать звонок -->
+    <div class="orderMeasurement_window" id="orderCallWindow" style="display: none">
+        <img class="cursor" src="img/OrderMeasurement/Close.svg" id="orderCallClose" alt="">
+        <p class="orderMeasurement_title text16px">заказать звонок</p>
+        <form action="#" method="post">
+            <input type="text" name="nameCallMeasurement" placeholder="Имя"><br>
+            <input type="text" name="phoneCallMeasurement" placeholder="Телефон"><br>
+            <div class="orderMeasurement_personalData personalData cursor"><input type="checkbox" id="orderCallPersonalData" name="orderMeasurementPersonalData" checked required><span><img src="img/OrderMeasurement/checked.svg" alt=""></span><label for="orderCallPersonalData">Даю согласие на обработку <a href="#">Персональных данных</a></label></div>
+            <input class="cursor" type="button" value="Отправить">
+        </form>
+    </div>
+
+
+    <!--    Content-->
+
+    <div class="productPage">
+        <div class="wrapper productPage_wrapper">
+            <div class="productPage_content">
+                <div class="productPage_text">
+                    <p id="productPageTitle" class="text16px">ГАРДЕРОБНЫЙ ШКАФ 15 BASIC / SMART LINE </p>
+                    <button class="orderMeasurement text16px cursor" id="productPageorderMeasurement">Заказать звонок</button>
+                </div>
+                <div class="productPage_foto">
+                    <img class="cursor" src="img/productPage/Left.svg" id="productPageLeft" alt="">
+                    <div id="productPageFoto"></div>
+                    <img class="cursor" src="img/productPage/Right.svg" id="productPageRight" alt="">
+                </div>
+            </div>
+            <div class="productPage_button">
+                <div id="filterOpen" class="buttonArray cursor">
+                    <img src="img/productPage/ButtonLeft.svg" class="buttonArrayPeace" alt="">
+                    <img src="img/productPage/ButtonLeftHover.svg" class="buttonArrayHover" alt="">
+                    <img src="img/productPage/ButtonLeftActive.svg" class="buttonArrayActive" alt="">
+                </div>
+                <div id="filterOpen" class="buttonArray cursor">
+                    <img src="img/productPage/ButtoRight.svg" class="buttonArrayPeace" alt="">
+                    <img src="img/productPage/ButtonRightHover.svg" class="buttonArrayHover" alt="">
+                    <img src="img/productPage/ButtonRightActive.svg" class="buttonArrayActive" alt="">
+                </div>
+            </div>
+            <div class="productPage_back">
+                <div class="back cursor"><a href="index.html"><span>Назад</span><img src="img/promotionPage/back.svg" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+
+    <!--    Foto Window Portfolio-->
+    <div class="window_foto" id="windowOpen" style="display: none">
+        <img class="cursor" src="img/FotoWindow/Left.svg" alt="" id="windowFotoLeft">
+        <div class="foto_close">
+            <div class="foto" id="windowFoto">
+            </div>
+            <img class="cursor" src="img/FotoWindow/Close.svg" alt="" id="fotoWindowClose">
+        </div>
+        <img class="cursor" src="img/FotoWindow/Right.svg" alt="" id="windowFotoRight">
+
+    </div>
+
+    <script src="js/function.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/orderMeasurementWindow.js"></script>
+    <script src="js/orderCallWindow.js"></script>
+    <script src="js/productPage.js"></script>
+
+
+</body></html>
